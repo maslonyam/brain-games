@@ -13,6 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    
+    - name: Install github-lint
+    - run: npm install eslint-plugin-github@latest --save-dev
       
     - name: Run check
       run: npx eslint ../../ .
