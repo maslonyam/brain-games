@@ -1,0 +1,21 @@
+name: lint-files
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Install github-lint
+    - run: npm install eslint-plugin-github@latest --save-dev
+      
+    - name: Run check
+      run: npx eslint ../../ .
