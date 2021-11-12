@@ -8,4 +8,5 @@ publish:
 	npm publish --dry-run
 
 lint:
+	npm install --save eslint-config-airbnb
 	npx eslint .
