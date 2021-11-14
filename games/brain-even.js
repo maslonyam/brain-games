@@ -3,7 +3,7 @@ import appLogic from '../src/index.js';
 const brainEvenNumGenerator = () => {
   const number = Math.floor(Math.random() * 100);
   return number;
-}
+};
 
 const brainEvenAnswer = (num) => {
   let correctAnswer;

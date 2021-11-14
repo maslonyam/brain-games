@@ -1,16 +1,17 @@
 import appLogic from '../src/index.js';
 
 const brainCalcExpGenerator = () => {
-    let expression;
-    const signs = ['+', '-', '*'];
-    const index = Math.floor(Math.random() * 3);
-    const sign = signs[index];
-  
-    const number1 = Math.floor(Math.random() * 100);
-    const number2 = Math.floor(Math.random() * 100);
+  let exp = '';
+  const signs = ['+', '-', '*'];
 
-    expression = `${number1} ${sign} ${number2}`;
-    return expression;
+  const index = Math.floor(Math.random() * 3);
+  const sign = signs[index];
+
+  const number1 = Math.floor(Math.random() * 100);
+  const number2 = Math.floor(Math.random() * 100);
+
+  exp = `${number1} ${sign} ${number2}`;
+  return exp;
 };
 
 const brainCalcAnswer = (exp) => {

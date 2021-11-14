@@ -8,7 +8,7 @@ const appLogic = (rules, generateQuestion, getCorrectAnswer) => {
   const name = printWelcome(rules);
   let acc = 0;
   do {
-    let question = generateQuestion();
+    const question = generateQuestion();
     printQuestion(question);
     const answer = getAnswer();
     const correctAnswer = getCorrectAnswer(question);
